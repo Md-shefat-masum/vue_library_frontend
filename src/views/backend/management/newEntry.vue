@@ -4,25 +4,32 @@
       <div class="col-sm-12 col-md-8 col-lg-9">
         <div class="card">
           <div class="card-header">
-            <h4>Book Entry</h4>
+            <h4>New Entry</h4>
           </div>
           <div class="card-body">
             <form action="">
               <div class="form-group">
+                <label for="">User Name</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="form-group">
                 <label for="">Book Name</label>
-                <input type="text" class="form-control" />
+                <select name="" class="form-control">
+                  <option value="">book1</option>
+                  <option value="">book1</option>
+                </select>
               </div>
               <div class="form-group">
-                <label for="">Author</label>
-                <input type="text" class="form-control" />
+                <label for="">Time</label>
+                <input type="time" class="form-control" />
               </div>
               <div class="form-group">
-                <label for="">Section</label>
-                <input type="text" class="form-control" />
+                <label for="">Date</label>
+                <input type="date" class="form-control" />
               </div>
               <div class="form-group">
-                <label for="">Image</label>
-                <input type="file" class="form-control" />
+                <label for="">Return Date</label>
+                <input type="date" class="form-control" />
               </div>
               <div class="form-group">
                 <button type="button" class="btn btn-secondary">Submit</button>
@@ -43,3 +50,5 @@ export default {
   },
 };
 </script>
+
+<style></style>

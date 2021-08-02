@@ -4,7 +4,7 @@
       <div class="col-12">
         <div class="card">
           <div class="card-header">
-            <h4>Book List</h4>
+            <h4>Entry List</h4>
           </div>
           <div class="card-body table-responsive">
             <table class="table table-bordered table-striped text-center">
@@ -12,9 +12,10 @@
                 <tr>
                   <th>#</th>
                   <th>Image</th>
-                  <th>Book Name</th>
-                  <th>Author</th>
-                  <th>Section</th>
+                  <th>Name</th>
+                  <th>Time</th>
+                  <th>Date</th>
+                  <th>Return Date</th>
                   <th class="text-center" style="width: 20%">Action</th>
                 </tr>
               </thead>
@@ -25,8 +26,9 @@
                     <img src="/assets/images/product/1.png" alt="image" />
                   </td>
                   <td>Book</td>
-                  <td>Mr.Stark</td>
-                  <td>B Block</td>
+                  <td>11:59 pm</td>
+                  <td>12,mar 2021</td>
+                  <td>16,mar 2021</td>
                   <td>
                     <div class="d-flex justify-content-end">
                       <a href="#" class="btn btn-sm btn-primary mx-1"

@@ -48,7 +48,7 @@
 
 <script>
 export default {
-  name: "bookList",
+  name: "admin-base",
   methods: {
     getData: function () {},
   },

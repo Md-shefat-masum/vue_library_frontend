@@ -4,17 +4,15 @@
       <div class="col-12">
         <div class="card">
           <div class="card-header">
-            <h4>Book List</h4>
+            <h4>User List</h4>
           </div>
           <div class="card-body table-responsive">
             <table class="table table-bordered table-striped text-center">
               <thead>
                 <tr>
-                  <th>#</th>
-                  <th>Image</th>
-                  <th>Book Name</th>
-                  <th>Author</th>
-                  <th>Section</th>
+                  <th style="width: 10%">#</th>
+                  <th style="width: 10%">Image</th>
+                  <th>Name</th>
                   <th class="text-center" style="width: 20%">Action</th>
                 </tr>
               </thead>
@@ -24,9 +22,7 @@
                   <td>
                     <img src="/assets/images/product/1.png" alt="image" />
                   </td>
-                  <td>Book</td>
-                  <td>Mr.Stark</td>
-                  <td>B Block</td>
+                  <td>Stark</td>
                   <td>
                     <div class="d-flex justify-content-end">
                       <a href="#" class="btn btn-sm btn-primary mx-1"
@@ -48,7 +44,7 @@
 
 <script>
 export default {
-  name: "bookList",
+  name: "user-list",
   methods: {
     getData: function () {},
   },
