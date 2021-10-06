@@ -49,8 +49,15 @@
 <script>
 export default {
   name: "admin-base",
+  created: function () {
+    this.getData();
+  },
   methods: {
-    getData: function () {},
+    getData: function () {
+      window.axios.get("/book-list").then((res) => {
+        console.log(res.data);
+      });
+    },
   },
 };
 </script>

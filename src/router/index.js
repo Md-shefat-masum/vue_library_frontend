@@ -25,17 +25,18 @@ import managementProfile from "../views/backend/management/profile";
 import authLayout from "../views/frontend/authLayout";
 import login from "../views/frontend/login";
 import signup from "../views/frontend/signup";
+import forget from "../views/frontend/forget";
 import portfolio from "../views/frontend/portfolio";
 
 const routes = [
   {
-    path: "/dashboard",
+    path: "/vue_library_frontend/dashboard",
     name: "dasboard",
     component: dashboard,
   },
 
   {
-    path: "/admin",
+    path: "/vue_library_frontend/admin",
     component: adminLayout,
     children: [
       {
@@ -64,6 +65,11 @@ const routes = [
         component: bookEntry,
       },
       {
+        path: "book-edit/:id",
+        name: "bookEdit",
+        component: bookEntry,
+      },
+      {
         path: "entry-list",
         name: "entryList",
         component: entryList,
@@ -77,7 +83,7 @@ const routes = [
   },
 
   {
-    path: "/student",
+    path: "/vue_library_frontend/student",
     component: studentLayout,
     children: [
       {
@@ -99,7 +105,7 @@ const routes = [
   },
 
   {
-    path: "/management",
+    path: "/vue_library_frontend/management",
     component: managementLayout,
     children: [
       {
@@ -131,7 +137,7 @@ const routes = [
   },
 
   {
-    path: "/auth",
+    path: "/vue_library_frontend/auth",
     component: authLayout,
     children: [
       {
@@ -144,10 +150,15 @@ const routes = [
         name: "signup",
         component: signup,
       },
+      {
+        path: "forget",
+        name: "forget",
+        component: forget,
+      },
     ],
   },
   {
-    path: "/portfolio",
+    path: "/vue_library_frontend/portfolio",
     name: "portfolio",
     component: portfolio,
   },

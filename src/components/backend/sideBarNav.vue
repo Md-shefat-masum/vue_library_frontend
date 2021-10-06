@@ -3,6 +3,13 @@
     <div class="sidebar-user text-center">
       <div>
         <img
+          v-if="get_auth_info.image"
+          alt=""
+          class="img-50 rounded-circle"
+          :src="get_profile_image_url"
+        />
+        <img
+          v-else
           class="img-50 rounded-circle"
           src="/assets/images/user/1.jpg"
           alt="#"
@@ -19,34 +26,34 @@
         </a>
         <ul class="sidebar-submenu">
           <li>
-            <router-link :to="{ name: 'adminProfile' }"
-              ><i class="fa fa-angle-right"></i>Home</router-link
-            >
+            <router-link :to="{ name: 'adminProfile' }">
+              <i class="fa fa-angle-right"></i>Home
+            </router-link>
           </li>
           <li>
-            <router-link :to="{ name: 'userList' }"
-              ><i class="fa fa-angle-right"></i>Users</router-link
-            >
+            <router-link :to="{ name: 'userList' }">
+              <i class="fa fa-angle-right"></i>Users
+            </router-link>
           </li>
           <li>
-            <router-link :to="{ name: 'bookList' }"
-              ><i class="fa fa-angle-right"></i>Book List</router-link
-            >
+            <router-link :to="{ name: 'bookList' }">
+              <i class="fa fa-angle-right"></i>Book List
+            </router-link>
           </li>
           <li>
-            <router-link :to="{ name: 'bookEntry' }"
-              ><i class="fa fa-angle-right"></i>Book Entry</router-link
-            >
+            <router-link :to="{ name: 'bookEntry' }">
+              <i class="fa fa-angle-right"></i>Book Entry
+            </router-link>
           </li>
           <li>
-            <router-link :to="{ name: 'entryList' }"
-              ><i class="fa fa-angle-right"></i>Entry List</router-link
-            >
+            <router-link :to="{ name: 'entryList' }">
+              <i class="fa fa-angle-right"></i>Entry List
+            </router-link>
           </li>
           <li>
-            <router-link :to="{ name: 'newEntry' }"
-              ><i class="fa fa-angle-right"></i>New Entry</router-link
-            >
+            <router-link :to="{ name: 'newEntry' }">
+              <i class="fa fa-angle-right"></i>New Entry
+            </router-link>
           </li>
         </ul>
       </li>
@@ -58,14 +65,14 @@
         </a>
         <ul class="sidebar-submenu">
           <li>
-            <router-link :to="{ name: 'studentProfile' }"
-              ><i class="fa fa-angle-right"></i>Profile</router-link
-            >
+            <router-link :to="{ name: 'studentProfile' }">
+              <i class="fa fa-angle-right"></i>Profile
+            </router-link>
           </li>
           <li>
-            <router-link :to="{ name: 'studentBookList' }"
-              ><i class="fa fa-angle-right"></i>Book List</router-link
-            >
+            <router-link :to="{ name: 'studentBookList' }">
+              <i class="fa fa-angle-right"></i>Book List
+            </router-link>
           </li>
         </ul>
       </li>
@@ -77,18 +84,18 @@
         </a>
         <ul class="sidebar-submenu">
           <li>
-            <router-link :to="{ name: 'managementProfile' }"
-              ><i class="fa fa-angle-right"></i>Profile</router-link
-            >
-            <router-link :to="{ name: 'managementBookList' }"
-              ><i class="fa fa-angle-right"></i>Book List</router-link
-            >
-            <router-link :to="{ name: 'managementEntryList' }"
-              ><i class="fa fa-angle-right"></i>Entry List</router-link
-            >
-            <router-link :to="{ name: 'managementNewEntry' }"
-              ><i class="fa fa-angle-right"></i>New Entry</router-link
-            >
+            <router-link :to="{ name: 'managementProfile' }">
+              <i class="fa fa-angle-right"></i>Profile
+            </router-link>
+            <router-link :to="{ name: 'managementBookList' }">
+              <i class="fa fa-angle-right"></i>Book List
+            </router-link>
+            <router-link :to="{ name: 'managementEntryList' }">
+              <i class="fa fa-angle-right"></i>Entry List
+            </router-link>
+            <router-link :to="{ name: 'managementNewEntry' }">
+              <i class="fa fa-angle-right"></i>New Entry
+            </router-link>
           </li>
         </ul>
       </li>
@@ -113,6 +120,9 @@ export default {
   methods: {
     ...mapMutations(["set_logout"]),
     get_logout: function () {
+      window.axios.get("/user/logout").then((res) => {
+        console.log(res.data);
+      });
       this.$router.replace({ name: "login" });
       this.set_logout();
     },
@@ -157,7 +167,12 @@ export default {
     },
   },
   computed: {
-    ...mapGetters(["get_auth_role_name", "get_check_auth_status"]),
+    ...mapGetters([
+      "get_auth_role_name",
+      "get_check_auth_status",
+      "get_auth_info",
+      "get_profile_image_url",
+    ]),
   },
 };
 </script>
