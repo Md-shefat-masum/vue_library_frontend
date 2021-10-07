@@ -5,6 +5,13 @@
         <div class="card">
           <div class="card-header">
             <h4>Book List</h4>
+            <button
+              v-if="selected_data.length > 0"
+              @click.prevent="delete_multiple()"
+              class="btn btn-success"
+            >
+              Delete Selected ( {{ selected_data.length }} )
+            </button>
           </div>
           <div class="card-body table-responsive">
             <table
@@ -16,6 +23,14 @@
             >
               <thead>
                 <tr>
+                  <th>
+                    <input
+                      type="checkbox"
+                      @click="check_all()"
+                      id="check_all"
+                      class="form-check"
+                    />
+                  </th>
                   <th>#</th>
                   <th>Image</th>
                   <th>Book Name</th>
@@ -26,6 +41,21 @@
               </thead>
               <tbody>
                 <tr v-for="(book, index) in book_list.data" :key="book.id">
+                  <td>
+                    <input
+                      v-if="selected_data.includes(book.id)"
+                      checked
+                      type="checkbox"
+                      @change="add_to_selected(book.id)"
+                      class="form-check"
+                    />
+                    <input
+                      v-else
+                      type="checkbox"
+                      @change="add_to_selected(book.id)"
+                      class="form-check"
+                    />
+                  </td>
                   <td>{{ book.id }}</td>
                   <td>
                     <img
@@ -95,6 +125,8 @@ export default {
       pagination_option: {
         edgeNavigation: true,
       },
+
+      selected_data: [],
     };
   },
   created: function () {
@@ -118,6 +150,37 @@ export default {
           // this.book_list.data.splice(index,1);
           this.getData();
         });
+      }
+    },
+    add_to_selected: function (id) {
+      this.selected_data.includes(id)
+        ? (this.selected_data = this.selected_data.filter((item) => item != id))
+        : this.selected_data.push(id);
+
+      console.log(this.selected_data);
+    },
+    check_all: function () {
+      this.book_list.data.map((item) => {
+        this.selected_data.includes(item.id)
+          ? (this.selected_data = this.selected_data.filter(
+              (item2) => item2 != item.id
+            ))
+          : this.selected_data.push(item.id);
+
+        return 0;
+      });
+    },
+    delete_multiple: function () {
+      let con = confirm("sure want to delete??");
+      if (con) {
+        window.axios
+          .post("/book-list/delete-multi", { ids: this.selected_data })
+          .then((res) => {
+            console.log(res.data);
+            this.selected_data = [];
+            this.getData();
+            window.$("#check_all").prop("checked", false);
+          });
       }
     },
   },
