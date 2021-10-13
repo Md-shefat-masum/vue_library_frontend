@@ -4,14 +4,18 @@
       <div class="col-12">
         <div class="card">
           <div class="card-header">
-            <h4>Book List</h4>
-            <button
-              v-if="selected_data.length > 0"
-              @click.prevent="delete_multiple()"
-              class="btn btn-success"
-            >
-              Delete Selected ( {{ selected_data.length }} )
-            </button>
+            <div class="d-flex justify-content-between flex-wrap">
+
+              <h4>Book List</h4>
+              <input type="text" class="form-control w-50" @keyup="search($event.target.value)" placeholder="search..">
+              <button
+                v-if="selected_data.length > 0"
+                @click.prevent="delete_multiple()"
+                class="btn btn-success"
+              >
+                Delete Selected ( {{ selected_data.length }} )
+              </button>
+            </div>
           </div>
           <div class="card-body table-responsive">
             <table
@@ -125,6 +129,7 @@ export default {
       pagination_option: {
         edgeNavigation: true,
       },
+      search_key: '',
 
       selected_data: [],
     };
@@ -134,7 +139,11 @@ export default {
   },
   methods: {
     getData: function (page = 1) {
-      window.axios.get("/book-list?page=" + page).then((res) => {
+      let url = `/book-list?page= ${page}`;
+      if(this.search_key.length > 0){
+        url += `&key=${this.search_key}`;
+      }
+      window.axios.get(url).then((res) => {
         // console.log(res.data);
         this.book_list = res.data;
         this.total = res.data.total;
@@ -182,6 +191,11 @@ export default {
             window.$("#check_all").prop("checked", false);
           });
       }
+    },
+    search: function (key){
+      console.log(key);
+      this.search_key = key;
+      this.getData();
     },
   },
   computed: {
