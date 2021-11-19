@@ -1,0 +1,2397 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Study - Education HTML5 Template
+    Template URI: http://devitems.com
+    Description: Education HTML5 Template
+    Author: Hastech
+    Author URI: http://devitems.com
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    1.  Theme Default CSS (body, link color, section etc)
+    2.  Header CSS
+          2.1 Header Top
+          2.2 Header Bottom
+              2.2.1 Header Logo
+              2.2.2 Header Menu
+              2.2.3 Header Button
+    3.  Slider Area
+    4.  About Area
+          4.1 About Area
+          4.2 Skill Area
+          4.3 Teachers Area
+    5.  Course Area
+          5.1 Course Item
+          5.2 Single Course Details
+    6.  Funfact Area
+    7.  Gallery Area
+    8.  Event Area
+          8.1 Event Item
+          8.2 Single Event Details
+    9.  Testimonial Area
+    10. News Area
+    11. Contact Area
+    12. Footer Top Area
+    13. Footer Bottom Area
+    14. Comments & Sidebar Area
+          14.1 Comments
+          14.2 Sidebar
+    
+
+-----------------------------------------------------------------------------------*/
+
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Montserrat:300,400,500,600,700,800,900');
+.frontend_page{
+html, body {
+    height: 100%;
+}
+body {
+    color: #666;
+    font-family: "Lato",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    overflow-x: hidden;
+    text-align: left;
+}
+p {}
+p:last-child {
+    margin-bottom: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #002147;
+    margin-top: 0;
+}
+a {
+    color: #002147;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration:none;
+}
+a:hover {
+    color: #4c4c4c;
+    text-decoration: none;
+}
+a:active, a:hover, a:focus {
+    outline: 0 none;
+    text-decoration: none;
+}
+a:focus, button:focus {
+    outline: none;
+}
+ul{
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width:100%;
+    height:auto;
+    border:0; 
+    vertical-align:top;
+}
+*::before, *::after, a, button, span, input, textarea {
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+input, textarea {
+    font-family: 'Montserrat', sans-serif;
+}
+input:focus, textarea:focus {
+    box-shadow: 0;
+    outline: 0;
+}
+
+/*-- Placeholder Opacity --*/
+::-webkit-input-placeholder {
+    opacity: 1 !important;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+}
+:-moz-placeholder {
+    opacity: 1 !important;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+}
+::-moz-placeholder {
+    opacity: 1 !important;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+}
+:-ms-input-placeholder {
+    opacity: 1 !important;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+}
+
+/*-- Common Classes --*/
+.fix {
+    overflow:hidden
+}
+.float-left {
+    float:left;
+}
+.float-right {
+    float:right;
+}
+
+/*-- Margin Top --*/
+.mt-5 {
+    margin-top: 5px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-15 {
+    margin-top: 15px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mt-25 {
+    margin-top: 25px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+.mt-35 {
+    margin-top: 35px;
+}
+.mt-40 {
+    margin-top: 40px;
+}
+.mt-45 {
+    margin-top: 45px;
+}
+.mt-50 {
+    margin-top: 50px;
+}
+.mt-55 {
+    margin-top: 55px;
+}
+.mt-60 {
+    margin-top: 60px;
+}
+.mt-65 {
+    margin-top: 65px;
+}
+.mt-70 {
+    margin-top: 70px;
+}
+.mt-75 {
+    margin-top: 75px;
+}
+.mt-80 {
+    margin-top: 80px;
+}
+.mt-85 {
+    margin-top: 85px;
+}
+.mt-90 {
+    margin-top: 90px;
+}
+.mt-95 {
+    margin-top: 95px;
+}
+.mt-100 {
+    margin-top: 100px;
+}
+.mt-105 {
+    margin-top: 105px;
+}
+.mt-110 {
+    margin-top: 110px;
+}
+.mt-115 {
+    margin-top: 115px;
+}
+.mt-120 {
+    margin-top: 120px;
+}
+.mt-125 {
+    margin-top: 125px;
+}
+.mt-130 {
+    margin-top: 130px;
+}
+.mt-135 {
+    margin-top: 135px;
+}
+.mt-140 {
+    margin-top: 140px;
+}
+.mt-145 {
+    margin-top: 145px;
+}
+.mt-150 {
+    margin-top: 150px;
+}
+
+/*-- Margin Bottom --*/
+.mb-5 {
+    margin-bottom: 5px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mb-25 {
+    margin-bottom: 25px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.mb-35 {
+    margin-bottom: 35px;
+}
+.mb-40 {
+    margin-bottom: 40px;
+}
+.mb-45 {
+    margin-bottom: 45px;
+}
+.mb-50 {
+    margin-bottom: 50px;
+}
+.mb-55 {
+    margin-bottom: 55px;
+}
+.mb-60 {
+    margin-bottom: 60px;
+}
+.mb-65 {
+    margin-bottom: 65px;
+}
+.mb-70 {
+    margin-bottom: 70px;
+}
+.mb-75 {
+    margin-bottom: 75px;
+}
+.mb-80 {
+    margin-bottom: 80px;
+}
+.mb-85 {
+    margin-bottom: 85px;
+}
+.mb-90 {
+    margin-bottom: 90px;
+}
+.mb-95 {
+    margin-bottom: 95px;
+}
+.mb-100 {
+    margin-bottom: 100px;
+}
+.mb-105 {
+    margin-bottom: 105px;
+}
+.mb-110 {
+    margin-bottom: 110px;
+}
+.mb-115 {
+    margin-bottom: 115px;
+}
+.mb-120 {
+    margin-bottom: 120px;
+}
+.mb-125 {
+    margin-bottom: 125px;
+}
+.mb-130 {
+    margin-bottom: 130px;
+}
+.mb-135 {
+    margin-bottom: 135px;
+}
+.mb-140 {
+    margin-bottom: 140px;
+}
+.mb-145 {
+    margin-bottom: 145px;
+}
+.mb-150 {
+    margin-bottom: 150px;
+}
+
+/*-- Padding Top --*/
+.pt-5 {
+    padding-top: 5px;
+}
+.pt-10 {
+    padding-top: 10px;
+}
+.pt-15 {
+    padding-top: 15px;
+}
+.pt-20 {
+    padding-top: 20px;
+}
+.pt-25 {
+    padding-top: 25px;
+}
+.pt-30 {
+    padding-top: 30px;
+}
+.pt-35 {
+    padding-top: 35px;
+}
+.pt-40 {
+    padding-top: 40px;
+}
+.pt-45 {
+    padding-top: 45px;
+}
+.pt-50 {
+    padding-top: 50px;
+}
+.pt-55 {
+    padding-top: 55px;
+}
+.pt-60 {
+    padding-top: 60px;
+}
+.pt-65 {
+    padding-top: 65px;
+}
+.pt-70 {
+    padding-top: 70px;
+}
+.pt-75 {
+    padding-top: 75px;
+}
+.pt-80 {
+    padding-top: 80px;
+}
+.pt-85 {
+    padding-top: 85px;
+}
+.pt-90 {
+    padding-top: 90px;
+}
+.pt-95 {
+    padding-top: 95px;
+}
+.pt-100 {
+    padding-top: 100px;
+}
+.pt-105 {
+    padding-top: 105px;
+}
+.pt-110 {
+    padding-top: 110px;
+}
+.pt-115 {
+    padding-top: 115px;
+}
+.pt-120 {
+    padding-top: 120px;
+}
+.pt-125 {
+    padding-top: 125px;
+}
+.pt-130 {
+    padding-top: 130px;
+}
+.pt-135 {
+    padding-top: 135px;
+}
+.pt-140 {
+    padding-top: 140px;
+}
+.pt-145 {
+    padding-top: 145px;
+}
+.pt-150 {
+    padding-top: 150px;
+}
+
+/*-- Padding Bottom --*/
+.pb-5 {
+    padding-bottom: 5px;
+}
+.pb-10 {
+    padding-bottom: 10px;
+}
+.pb-15 {
+    padding-bottom: 15px;
+}
+.pb-20 {
+    padding-bottom: 20px;
+}
+.pb-25 {
+    padding-bottom: 25px;
+}
+.pb-30 {
+    padding-bottom: 30px;
+}
+.pb-35 {
+    padding-bottom: 35px;
+}
+.pb-40 {
+    padding-bottom: 40px;
+}
+.pb-45 {
+    padding-bottom: 45px;
+}
+.pb-50 {
+    padding-bottom: 50px;
+}
+.pb-55 {
+    padding-bottom: 55px;
+}
+.pb-60 {
+    padding-bottom: 60px;
+}
+.pb-65 {
+    padding-bottom: 65px;
+}
+.pb-70 {
+    padding-bottom: 70px;
+}
+.pb-75 {
+    padding-bottom: 75px;
+}
+.pb-80 {
+    padding-bottom: 80px;
+}
+.pb-85 {
+    padding-bottom: 85px;
+}
+.pb-90 {
+    padding-bottom: 90px;
+}
+.pb-95 {
+    padding-bottom: 95px;
+}
+.pb-100 {
+    padding-bottom: 100px;
+}
+.pb-105 {
+    padding-bottom: 105px;
+}
+.pb-110 {
+    padding-bottom: 110px;
+}
+.pb-115 {
+    padding-bottom: 115px;
+}
+.pb-120 {
+    padding-bottom: 120px;
+}
+.pb-125 {
+    padding-bottom: 125px;
+}
+.pb-130 {
+    padding-bottom: 130px;
+}
+.pb-135 {
+    padding-bottom: 135px;
+}
+.pb-140 {
+    padding-bottom: 140px;
+}
+.pb-145 {
+    padding-bottom: 145px;
+}
+.pb-150 {
+    padding-bottom: 150px;
+}
+
+/*-- Button --*/
+.btn {
+  background-color: #002147;
+  border: 2px solid #002147;
+  border-radius: 0;
+  color: #ffffff;
+  height: 40px;
+  line-height: 24px;
+  padding: 6px 30px;
+  text-transform: uppercase;
+}
+.btn:hover {
+  background-color: #fdc800;
+  border: 2px solid #fdc800;
+  color: #002147;
+}
+
+/*-- Section --*/
+.section {
+    float: left;
+    width: 100%;
+}
+
+/*-- BG Color --*/
+.bg-white {
+    background-color: #ffffff;
+}
+.bg-gray {
+    background-color: #f5f5f5;
+}
+
+/*-- Section Title --*/
+.section-title {
+    text-align: center;
+    overflow: hidden;
+    position: relative
+}
+.section-title h3 {
+    font-size: 30px;
+    line-height: 22px;
+    margin-bottom: 15px;
+    text-transform: uppercase
+}
+.section-title p {
+    color: #000000;
+    font-family: "Raleway";
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+/*-- Page Banner Area --*/
+.page-banner-area {
+    background-image: url("img/bg/banner.jpg");
+    margin-top: 154px;
+    padding: 80px 0;
+}
+
+/*-- Page Banner --*/
+.page-banner {}
+.page-banner h1 {
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 22px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/*-- Breadcrumb --*/
+.breadcrumb {
+    background-color: transparent;
+    line-height: 12px;
+    margin-bottom: 0;
+    padding: 0;
+    text-align: center;
+}
+.breadcrumb li {
+    margin: 0 16px;
+    position: relative;
+}
+.breadcrumb > li:first-child:before {
+    color: #ffffff;
+    content: "\f2fb";
+    display: block;
+    font-family: "Material-Design-Iconic-Font";
+    font-size: 18px;
+    position: absolute;
+    right: -22px;
+    top: 1px;
+}
+.breadcrumb > li + li:before {
+    display: none;
+}
+.breadcrumb a {
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+}
+.breadcrumb a:hover {
+    color: #fdc800;
+}
+
+/*-- Overlay --*/
+.overlay {
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.overlay::after {
+    background-color: #002147;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+/*-- Slick Controls --*/
+
+/*-- Slick Arrow --*/
+.slick-arrow {
+    background-color: #002147;
+    border: medium none;
+    border-radius: 50%;
+    color: #fff;
+    display: block;
+    height: 40px;
+    margin-top: -20px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    z-index: 99;
+}
+.slick-arrow.slick-prev {
+    left: -45px;
+}
+.slick-arrow.slick-next {
+    right: -45px;
+}
+.slick-slider:hover .slick-arrow {
+    opacity: 1;
+}
+.slick-slider:hover .slick-arrow.slick-prev {
+    left: -5px;
+}
+.slick-slider:hover .slick-arrow.slick-next {
+    right: -5px;
+}
+.slick-arrow:hover {
+    background-color: #fdc800;
+    color: #002147;
+}
+.slick-arrow i {
+  display: block;
+  font-size: 22px;
+  line-height: 40px;
+}
+
+/*-- Slick Dots --*/
+.slick-dots {
+    height: 10px;
+    margin-top: 30px;
+}
+.slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+    vertical-align: top;
+}
+.slick-dots li button {
+    background-color: #fff;
+    border: medium none;
+    border-radius: 50%;
+    display: block;
+    height: 10px;
+    opacity: 0.5;
+    padding: 0;
+    text-indent: -9999px;
+    width: 10px;
+}
+.slick-dots li.slick-active button {
+    opacity: 1;
+    background-color: #fdc800;
+}
+
+/*-- Scrollup --*/
+#scrollUp {
+    background-color: #fdc800;
+    bottom: 0;
+    color: #ffffff;
+    cursor: pointer;
+    display: none;
+    font-size: 28px;
+    height: 40px;
+    line-height: 37px;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    width: 40px;
+    z-index: 9999;
+}
+#scrollUp:hover {
+    background-color: #002147;
+}
+
+/*----------------------------------------*/
+/*  2. Header CSS
+/*----------------------------------------*/
+.header-area {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+
+/*---- 2.1 Header Top ----*/
+.header-top {
+    background-color: #002147;
+    padding: 10px 0;
+}
+
+/*-- Header Top Left --*/
+.header-top-left {}
+.header-top-left p {
+    color: #ffffff;
+    display: block;
+    font-size: 13px;
+}
+
+/*-- Header Top Right --*/
+.header-top-right {}
+.header-top-right ul {
+    display: inline-block;
+    vertical-align: top;
+}
+.header-top-right ul li {
+    display: block;
+    float: left;
+    margin-left: 30px;
+}
+.header-top-right ul li:first-child {
+    margin-left: 0;
+}
+.header-top-right ul li a {
+    color: #ffffff;
+    display: block;
+    font-size: 13px;
+    font-family: 'Lato', sans-serif;
+}
+.header-top-right ul li a:hover {
+    color: #fdc800;
+}
+
+/*---- 2.2 Header Bottom ----*/
+.header-bottom {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+.header-bottom.stick {
+  -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+          animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+  position: fixed;
+}
+
+/*-- 2.2.1 Header Logo --*/
+.header-logo {
+    display: block;
+    margin-top: 35px;
+}
+.stick .header-logo {
+    margin-top: 20px;
+}
+.header-logo a {
+    display: block
+}
+.header-logo a img {}
+
+/*-- 2.2.2 Header Menu --*/
+.main-menu {}
+.main-menu nav {}
+.main-menu nav > ul {}
+.main-menu nav > ul > li {
+    display: block;
+    float: left;
+    margin-left: 30px;
+    position: relative;
+}
+.main-menu nav > ul li:first-child {
+    margin-left: 0;
+}
+.main-menu nav > ul > li > a {
+    display: block;
+    font-size: 12px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding: 40px 0;
+    position: relative;
+}
+.stick .main-menu nav > ul > li > a {
+    padding: 25px 0;
+}
+.main-menu nav > ul > li > a:before {
+    background-color: #fdc800;
+    bottom: 0;
+    content: "";
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    right: 50%;
+}
+.main-menu nav > li > a > i {
+    margin-left: 6px;
+    position: relative;
+    top: -1px;
+}
+.main-menu nav > ul > li.active > a, .main-menu nav > ul > li:hover > a {
+    color: #fdc800;
+}
+.main-menu nav > ul > li.active > a:before, .main-menu nav > ul > li:hover > a:before{
+    left: 0;
+    right: 0;
+}
+
+/*-- Sub Menu --*/
+ul.sub-menu {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    left: -20px;
+    margin: 0;
+    padding: 15px 20px 15px;
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    width: 220px;
+    z-index: -99;
+    opacity: 0;
+    margin-top: 30px;
+    visibility: hidden;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.main-menu nav > ul > li:hover ul.sub-menu {
+    opacity: 1;
+    margin-top: 0;
+    visibility: visible;
+    z-index: 999;
+}
+ul.sub-menu > li  {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+ul.sub-menu > li a {
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 32px;
+    text-transform: capitalize;
+}
+ul.sub-menu > li:hover a, ul.sub-menu > li.active a {
+    color: #fdc800;
+}
+
+/*-- Mobile Menu --*/
+a.meanmenu-reveal {
+    color: #002147;
+    font-size: 100%;
+    height: 24px;
+    padding: 0;
+    text-align: center;
+    top: -47px;
+}
+a.meanmenu-reveal:hover {
+    color: #fdc800;
+}
+a.meanmenu-reveal i {
+    display: block;
+    font-size: 22px;
+    line-height: 22px;
+}
+.mean-bar {
+    background-color: transparent;
+    min-height: auto;
+    padding: 0;
+    top: 100%;
+}
+.mean-nav {
+    background-color: transparent;
+    margin: 0;
+    position: relative;
+}
+.mean-nav > ul {
+    height: 200px;
+    overflow-x: scroll;
+    margin-bottom: 15px;
+}
+.mean-nav > ul ul {
+    box-shadow: none;
+    float: left;
+    margin: 0;
+    opacity: 1;
+    padding: 0;
+    position: static !important;
+    transition: none 0s ease 0s ;
+    visibility: visible;
+    width: 100%;
+}
+.mean-nav > ul > li:last-child {
+    border-bottom: 1px solid #ddd;
+}
+.mean-nav > ul > li li a {
+    border-color: #ddd;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    opacity: 1;
+    padding: 8px 0 8px 15px;
+}
+.mean-nav > ul > li li a:hover {
+    background-color: transparent;
+    color: #fdc800;
+}
+.mean-nav > ul > li li li a {
+    border-color: #ddd;
+    opacity: 1;
+    padding: 8px 0;
+    font-size: 12px;
+    padding-left: 30px;
+}
+.mean-nav > ul > li li li a:hover {
+    background-color: transparent;
+    color: #fdc800;
+}
+.mean-nav > ul > li > a,
+.mean-nav > ul > li a {
+    border-color: #ddd;
+    opacity: 1;
+    padding: 8px 0;
+    font-size: 12px;
+}
+.mean-nav > ul > li > a:hover,
+.mean-nav > ul > li a:hover {
+    background-color: transparent;
+    color: #fdc800;
+}
+.mean-nav a.mean-expand {
+    background-color: transparent;
+    border: medium none !important;
+    font-size: 20px !important;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 !important;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 40px;
+}
+.mean-nav a.mean-expand:hover {
+    color: #fdc800;
+}
+.mean-nav a.mean-expand .mean-clicked {
+    font-size: 20px !important;
+}
+
+/*-- 2.2.3 Header Button --*/
+.header-buttons {
+    margin-left: 40px;
+}
+
+/*--Header Search --*/
+.header-search {
+    cursor: pointer;
+    display: block;
+    position: relative;
+}
+.search-toggle {
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    padding: 40px 0;
+    color: #002147;
+    position: relative;
+}
+.stick .search-toggle {
+    padding: 25px 0;
+}
+.search-toggle:before {
+    background-color: #fdc800;
+    bottom: 0;
+    content: "";
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    right: 50%;
+}
+.search-toggle i {
+    font-size: 20px;
+    line-height: 30px;
+    display: block;
+}
+.search-toggle:hover, .search-toggle.active {
+    color: #fdc800;
+}
+.search-toggle:hover:before, .search-toggle.active:before{
+    left: 0;
+    right: 0;
+}
+
+/*-- Search Form --*/
+.search-form {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    float: right;
+    margin-top: 30px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    transition: all 0.4s ease 0s;
+    visibility: hidden;
+    width: 300px;
+    z-index: -99;
+}
+.search-form.open {
+    margin-top: 0;
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+}
+.header-search form {
+    overflow: hidden;
+    position: relative;
+}
+.header-search form input {
+    background-color: transparent;
+    border: medium none;
+    color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+    height: 50px;
+    padding: 0 40px 0 15px;
+    width: 100%;
+}
+.header-search form button {
+    background-color: transparent;
+    border: medium none;
+    color: #002147;
+    display: block;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 40px;
+}
+.header-search form button i {
+  display: block;
+  font-size: 20px;
+  line-height: 50px;
+}
+.header-search form button:hover {
+  color: #fdc800;
+}
+
+/*----------------------------------------*/
+/*  3. Slider Area
+/*----------------------------------------*/
+.slider-area {
+    margin-top: 154px;
+}
+.nivo-caption {
+    height: 100%;
+    top: 0;
+    padding: 0;
+    opacity: 1;
+    background-color: rgba(0,0,0,0.5);
+}
+.nivo-caption .container {
+    height: 100%;
+    display: table;
+}
+.nivo-caption .container .row {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*-- Hero Control --*/
+.nivo-directionNav {}
+.nivo-directionNav a {
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    margin-top: -30px;
+    color: #ffffff;
+}
+.nivo-directionNav a i {
+    font-size: 30px;
+    line-height: 60px;
+}
+.nivo-directionNav a:hover {
+    background-color: #fdc800;
+    color: #002147;
+}
+.nivo-directionNav a.nivo-prevNav {
+    left: -60px;
+}
+.nivo-directionNav a.nivo-nextNav {
+    right: -60px;
+}
+.nivoSlider:hover a.nivo-prevNav {
+    left: 30px;
+}
+.nivoSlider:hover a.nivo-nextNav {
+    right: 30px;
+}
+
+/*-- Hero Content --*/
+.hero-content {}
+.hero-content h2 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.hero-content h1 {
+    color: #ffffff;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 54px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+.hero-content p {
+    font-size: 16px;
+    padding: 0;
+    margin-bottom: 30px;
+}
+.hero-content .btn {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 0;
+    color: #fff;
+    display: inline-block;
+    font-size: 13px;
+    height: 44px;
+    line-height: 24px;
+    padding: 8px 30px;
+    text-transform: uppercase;
+}
+.hero-content .btn:hover {
+    background-color: #fdc800;
+    border-color: #fdc800;
+    color: #002147;
+}
+
+/*----------------------------------------*/
+/*  4. About Area
+/*----------------------------------------*/
+
+/*-- 4.1 About Area --*/
+.about-area {}
+
+/*-- About Content --*/
+.about-content {
+    margin-top: 30px;
+    padding-right: 30px;
+}
+.about-content h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    z-index: 9;
+    text-transform: capitalize;
+}
+.about-content p {
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+.about-content .btn {}
+
+/*-- About Image --*/
+.about-image {}
+.about-image img {
+    width: 100%;
+}
+
+/*-- 4.2 Skill Area --*/
+.skill-area {}
+.progress-title {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 13px;
+    text-transform: capitalize;
+}
+.progress {
+    background-color: #f5f5f5;
+    border-radius: 0;
+    box-shadow: none;
+    height: 4px;
+    margin: 0;
+    overflow: visible;
+}
+.progress-bar {
+    background-color: #fdc800;
+    position: relative;
+    box-shadow: none;
+}
+.progress-bar::before {
+    bottom: 13px;
+    color: #333;
+    content: attr(data-progress);
+    font-size: 13px;
+    line-height: 14px;
+    position: absolute;
+    right: 0;
+}
+
+/*-- 4.3 Teachers Area --*/
+.teachers-area {}
+.single-teacher {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.single-teacher:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.single-teacher img {
+    width: 100%;
+}
+.single-teacher .content {
+    background-color: #ffffff;
+    padding: 30px 25px 30px;
+    text-align: center;
+}
+.single-teacher .content h4 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 13px;
+    text-transform: uppercase;
+}
+.single-teacher .content h5 {
+    font-family: "Lato",sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.single-teacher .content .social-links {}
+.single-teacher .content .social-links a {
+    border: 1px solid #002147;
+    border-radius: 50%;
+    color: #002147;
+    display: inline-block;
+    height: 30px;
+    margin: 0 2px;
+    text-align: center;
+    width: 30px;
+    opacity: 0.7;
+}
+.single-teacher .content .social-links a i {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+}
+.single-teacher .content .social-links a:hover {
+    background-color: #fdc800;
+    border-color: #fdc800;
+    color: #ffffff;
+}
+
+/*----------------------------------------*/
+/*  5. Course Area
+/*----------------------------------------*/
+.course-area {}
+
+/*-- 5.1 Course Item --*/
+.course-item {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    position: relative;
+}
+.course-item:hover {
+    box-shadow: 0 10px 20px rgba(34, 30, 31, 0.25);
+}
+.course-item .image {
+    display: block;
+    position: relative;
+}
+.course-item .image img {
+    width: 100%;
+}
+.course-item .content {
+    padding: 26px 30px;
+}
+.course-item .content .title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.course-item .content .title a {}
+.course-item .content .title a:hover {
+    color: #fdc800;
+}
+.course-item .course-info {
+    overflow: hidden;
+}
+.course-item .course-info a, .course-item .course-info span {
+    color: #696969;
+    display: block;
+    float: left;
+    font-family: "Montserrat",sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-right: 15px;
+    text-transform: capitalize;
+}
+.course-item .course-info a i, .course-item .course-info span i {
+    font-size: 14px;
+    margin-right: 5px;
+}
+.course-item .course-info a:hover {
+    color: #fdc800;
+}
+
+/*-- 5.2 Single Course Details --*/
+.single-course-details {}
+.single-course-details .image {
+    margin-bottom: 15px;
+}
+.single-course-details .image img {
+    width: 100%;
+}
+.single-course-details .content .title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.single-course-details .content .title a {}
+.single-course-details .content .title a:hover {
+    color: #fdc800;
+}
+.single-course-details .course-info {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.single-course-details .course-info a, .single-course-details .course-info span {
+    color: #696969;
+    display: block;
+    float: left;
+    font-family: "Montserrat",sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-right: 15px;
+    text-transform: capitalize;
+}
+.single-course-details .course-info a i, .single-course-details .course-info span i {
+    font-size: 14px;
+    margin-right: 5px;
+}
+.single-course-details .course-info a:hover {
+    color: #fdc800;
+}
+.single-course-details .content  p {}
+
+/*-- Course Duration --*/
+.course-duration {
+}
+.course-duration .duration-title {
+    background-color: #fdc800;
+    color: #ffffff;
+    font-size: 18px;
+}
+.course-duration .duration-text {
+    background-color: #f6f6f6;
+    color: #4c4c4c;
+}
+.course-duration .text {
+    border-bottom: 1px solid #eee;
+    display: block;
+    padding: 10px 0;
+}
+.course-duration .text span {
+    display: inline-block;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 300;
+    text-align: center;
+    text-transform: capitalize;
+    width: 192px;
+}
+.course-duration .text .text-right {
+    border: 0 none;
+    display: inline-block;
+    float: right;
+    padding: 0;
+    text-align: center;
+    width: 240px;
+}
+
+/*----------------------------------------*/
+/*  6. Funfact Area
+/*----------------------------------------*/
+.funfact-area {
+    background-image: url("img/bg/funfact.jpg");
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+/*-- Single Funfact --*/
+.single-funfact {
+    text-align: center;
+}
+.single-funfact h2 {
+    color: #ffffff;
+    font-size: 62px;
+    margin-bottom: 30px;
+    line-height: 46px;
+}
+.single-funfact h4 {
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 0;
+    position: relative;
+}
+
+/*----------------------------------------*/
+/*  7. Gallery Area
+/*----------------------------------------*/
+.gallery-area {}
+
+/*-- Gallery Item --*/
+.gallery-item {
+    display: block;
+    position: relative;
+    padding: 0;
+}
+.gallery-item::before {
+    background-color: #fff;
+    border-radius: 50%;
+    color: #fdc800;
+    content: "\f1c3";
+    font-family: "Material-Design-Iconic-Font";
+    font-size: 20px;
+    height: 40px;
+    left: 50%;
+    line-height: 40px;
+    margin-left: -20px;
+    margin-top: 20px;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 40px;
+    z-index: 2;
+}
+.gallery-item:hover::before {
+    margin-top: -25px;
+    opacity: 1;
+}
+.gallery-item::after {
+    background-color: #fdc800;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.gallery-item:hover::after {
+    opacity: 0.85;
+}
+.gallery-item img {
+    width: 100%;
+}
+
+/*----------------------------------------*/
+/*  8. Event Area
+/*----------------------------------------*/
+.event-area {}
+
+/*-- 8.1 Event Item --*/
+.event-item {
+    position: relative;
+}
+.event-item::before {
+    background: transparent;
+    background: -moz-linear-gradient(top, transparent 0%, transparent 40%, #000000 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, transparent), color-stop(40%, transparent), color-stop(100%, #000000));
+    background: -webkit-linear-gradient(top, transparent 0%, transparent 40%, #000000 100%);
+    background: -o-linear-gradient(top, transparent 0%, transparent 40%, #000000 100%);
+    background: -ms-linear-gradient(top, transparent 0%, transparent 40%, #000000 100%);
+    background: linear-gradient(to bottom, transparent 0%, transparent 40%, #000000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='transparent', endColorstr='#000000', GradientType=0 );
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0.75;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.event-item img {
+    width: 100%;
+}
+.event-item .date {
+    background-color: #fdc800;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    left: 30px;
+    font-family: "Montserrat",sans-serif;
+    line-height: 24px;
+    padding: 10px 15px;
+    position: absolute;
+    text-align: center;
+    text-transform: capitalize;
+    top: 0;
+}
+.event-item .content {
+    bottom: 0;
+    left: 0;
+    padding: 15px 30px 20px;
+    position: absolute;
+    right: 0;
+}
+.event-item .date span {
+    display: block;
+    font-family: raleway;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 3px;
+    text-transform: uppercase;
+}
+.event-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.event-item h3 a {
+    color: #fff;
+}
+.event-item h3 a:hover {
+    color: #fdc800;;
+}
+.event-item .event-meta {}
+.event-item .event-meta span {
+    color: #fff;
+    display: block;
+    float: left;
+    margin-right: 15px;
+}
+.event-item .event-meta span:last-child {
+    margin-right: 0;
+}
+.event-item .event-meta span i {
+    margin-right: 5px;
+    line-height: 24px;
+    float: left;
+    padding-left: 1px;
+}
+
+/*-- 8.2 Single Event Details --*/
+.single-event-details {
+    position: relative;
+}
+.single-event-details img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.single-event-details .date {
+    background-color: #fdc800;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    left: 30px;
+    font-family: "Montserrat",sans-serif;
+    line-height: 24px;
+    padding: 10px 15px;
+    position: absolute;
+    text-align: center;
+    text-transform: capitalize;
+    top: 0;
+}
+.single-event-details .date span {
+    display: block;
+    font-family: raleway;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 3px;
+    text-transform: uppercase;
+}
+.single-event-details .content {}
+.single-event-details h3 {
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.single-event-details .event-meta {
+    margin-bottom: 5px;
+}
+.single-event-details .event-meta span {
+    color: #696969;
+    display: block;
+    float: left;
+    font-family: "Montserrat",sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-right: 15px;
+    text-transform: capitalize;
+}
+.single-event-details .event-meta span:last-child {
+    margin-right: 0;
+}
+.single-event-details .event-meta span i {
+    font-size: 14px;
+    margin-right: 5px;
+    padding-left: 1px;
+}
+
+/*----------------------------------------*/
+/*  9. Testimonial Area
+/*----------------------------------------*/
+.testimonial-area {
+    background-image: url("img/bg/testimonial.jpg");
+}
+
+/*-- Testimonial Slider --*/
+.testimonial-slider {}
+
+/*-- Single Testimonial --*/
+.sin-testimonial {}
+.sin-testimonial p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+.sin-testimonial h4 {
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    position: relative;
+    text-transform: uppercase;
+    padding-left: 35px;
+}
+.sin-testimonial h4::before {
+    background-color: #ffffff;
+    bottom: 3px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 25px;
+}
+
+/*----------------------------------------*/
+/*  10. News Area
+/*----------------------------------------*/
+.news-area {}
+
+/*-- News Item --*/
+.news-item {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.news-item:hover {
+    box-shadow: 0 10px 20px rgba(34, 30, 31, 0.25);
+}
+
+/*-- News Image --*/
+.news-item .image {
+    display: block;
+}
+.news-item .image img {
+    width: 100%;
+}
+
+/*-- News Content --*/
+.news-item .content {
+  padding: 26px 30px 22px;
+}
+.news-item .content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.news-item .content h3 a {}
+.news-item .content h3 a:hover {
+    color: #fdc800;
+}
+.news-item .content .news-meta {
+  margin-bottom: 10px;
+}
+.news-item .content .news-meta span, .news-item .content .news-meta a {
+    display: block;
+    float: left;
+    font-size: 12px;
+    margin-right: 15px;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 300;
+    line-height: 16px;
+}
+.news-item .content .news-meta span i, .news-item .content .news-meta a i {
+    margin-right: 5px;
+    font-size: 14px;
+    padding-left: 1px;
+}
+.news-item .content .news-meta a:hover {
+    color: #fdc800;
+}
+.news-item .content p {}
+.news-item .content > a {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
+.news-item .content > a:hover {
+    color: #fdc800;
+}
+
+.single-news-details {}
+.single-news-details img {
+    margin-bottom: 20px;
+    width: 100%;
+}
+.single-news-details .content {}
+.single-news-details .content .title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.single-news-details .content .news-meta {
+  margin-bottom: 10px;
+}
+.single-news-details .content .news-meta span, .single-news-details .content .news-meta a {
+    display: block;
+    float: left;
+    font-size: 12px;
+    margin-right: 15px;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 300;
+    line-height: 16px;
+}
+.single-news-details .content .news-meta span i, .single-news-details .content .news-meta a i {
+    margin-right: 5px;
+    font-size: 14px;
+    padding-left: 1px;
+}
+.single-news-details .content .news-meta a:hover {
+    color: #fdc800;
+}
+.single-news-details .content p {}
+
+.single-news-details .quote-section {
+    background-color: #efefef;
+    border-left: 2px solid #fdc800;
+    margin: 38px 0 39px 35px;
+    overflow: hidden;
+    padding: 17px 37px 17px 27px;
+}
+.single-news-details .quote-section p {
+    margin: 0;
+}
+
+/*-- Single News Footer --*/
+.news-footer {
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    margin-top: 50px;
+    padding: 10px 0;
+}
+/*-- Related Tags --*/
+.related-tag {
+    display: inline-block
+}
+.related-tag span {
+    float: left;
+    margin-right: 10px;
+}
+.related-tag .tag {
+    display: inline-block;
+    vertical-align: top;
+}
+.related-tag .tag a {
+    color: #898989;
+    font-weight: 300;
+}
+.related-tag .tag a:hover {
+    color: #fdc800;
+}
+/*-- Share Links --*/
+.share-links {
+    float: right;
+}
+.share-links span {
+    float: left;
+    margin-right: 10px;
+}
+.share-links .links {
+    display: inline-block;
+    vertical-align: top;
+}
+.share-links .links a {
+    color: #898989;
+    display: block;
+    float: left;
+    font-weight: 300;
+    margin-right: 15px;
+}
+.share-links .links a:last-child {
+    margin-right: 0;
+}
+.share-links .links a:hover {
+    color: #fdc800;
+}
+
+/*----------------------------------------*/
+/*  11. Contact Page
+/*----------------------------------------*/
+.contact-area {}
+.contact-wrapper h4 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 14px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/*-- Contact Info --*/
+.contact-info {
+    margin-bottom: 50px;
+}
+.contact-info p {
+    line-height: 24px;
+    margin-bottom: 9px;
+}
+.contact-info p i {
+    display: block;
+    float: left;
+    font-size: 18px;
+    line-height: 24px;
+    width: 27px;
+}
+.contact-info p span {
+    display: block;
+    overflow: hidden;
+}
+
+/*-- Contact Social --*/
+.contact-social a {
+    color: #4c4c4c;
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+.contact-social a:last-child {
+    margin-right: 0;
+}
+.contact-social a i {
+    display: block;
+    font-size: 14px;
+    line-height: 17px;
+}
+.contact-social a:hover {
+    color: #86bc42;
+}
+
+/*-- Contact Form --*/
+.contact-form {}
+.contact-form form {}
+.contact-form input, .contact-form textarea {
+    background-color: #f1f1f1;
+    border: medium none;
+    color: #777777;
+    font-size: 14px;
+    font-weight: 300;
+    height: 44px;
+    line-height: 24px;
+    padding: 10px 15px;
+    width: 100%;
+}
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+.contact-form input[type="submit"] {
+    background-color: #002147;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    width: auto;
+}
+.contact-form input[type="submit"]:hover {
+    background-color: #fdc800;
+}
+
+/*-- Contact map --*/
+#contactMap{
+    width:100%;
+    height:485px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+/*----------------------------------------*/
+/*  12. Footer Top Area
+/*----------------------------------------*/
+.footer-top-area {
+    background-color: #002147;
+}
+
+/*-- Footer Widget --*/
+.footer-widget {}
+.footer-widget > h3 {
+    color: #ffffff;
+    font-family: raleway;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 13px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/*-- Footer Widget Link & Address --*/
+.footer-widget ul {}
+.footer-widget ul li {
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.footer-widget ul li:last-child {
+    margin-bottom: 0;
+}
+.footer-widget ul li a {
+    line-height: 25px;
+    color: #ffffff;
+    font-weight: 300;
+}
+.footer-widget ul li a:hover {
+    color: #fdc800;
+}
+.footer-widget ul li i {
+    font-size: 18px;
+    width: 30px;
+    line-height: 25px;
+    float: left;
+    color: #ffffff;
+}
+.footer-widget ul li span {
+    display: block;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+/*-- Footer Widget About --*/
+.footer-widget .footer-logo {
+    display: inline-block;
+    margin-bottom: 24px;
+}
+.footer-widget p {
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+/*-- Footer Social --*/
+.footer-widget .footer-social a {
+    color: #fff;
+    display: block;
+    float: left;
+    margin-right: 20px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.footer-widget .footer-social a i {
+    display: block;
+    font-size: 14px;
+    line-height: 17px;
+}
+.footer-widget .footer-social a:last-child {
+    margin-right: 0;
+}
+.footer-widget .footer-social a:hover {
+    color: #fdc800;
+}
+
+/*-- Footer Widget Instagram --*/
+.instagram-widget {}
+.instagram-widget div {
+    display: block;
+    float: left;
+    margin-bottom: 10px;
+    padding: 0 5px;
+    width: 33.3333%;
+}
+.instagram-widget div a {
+    display: block;
+    position: relative;
+}
+.instagram-widget div a:before {
+    background-color: #fdc800;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+}
+.instagram-widget div a:hover:before {
+    opacity: 0.9;
+}
+.instagram-widget div a::after {
+    bottom: 0;
+    color: #ffffff;
+    content: "+";
+    font-family: "Montserrat",sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    height: 40px;
+    left: 0;
+    line-height: 40px;
+    margin: -20px auto 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.instagram-widget div a:hover:after {
+    opacity: 1;
+}
+.instagram-widget div a img {
+    width: 100%;
+}
+
+/*----------------------------------------*/
+/*  13. Footer Bottom Area
+/*----------------------------------------*/
+.footer-bottom-area {
+    background-color: #002147;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 18px 0;
+}
+.footer-bottom-area p {
+    color: #ffffff;
+    font-size: 12px;
+}
+.footer-bottom-area p a {
+    color: #ffffff;
+}
+.footer-bottom-area p a:hover {
+    color: #fdc800;
+}
+
+/*----------------------------------------*/
+/*  14. Comments & Sidebar Area
+/*----------------------------------------*/
+
+/*-- 14.1 Comments --*/
+.comment-wrapper {
+    overflow: hidden;
+    margin-top: 70px;
+}
+.comment-wrapper h3 {
+  line-height: 18px;
+  margin-bottom: 50px;
+}
+
+/*-- Comment List --*/
+.comment-list {}
+.comment-list li {}
+.comment-list li ul {}
+.comment-list li ul li {
+    padding-left: 70px;
+}
+
+/*-- Single Comment --*/
+.single-comment {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 30px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+.single-comment .author-image {
+    border: 1px solid #eaeaea;
+    float: left;
+    height: 70px;
+    margin-right: 15px;
+    width: 70px;
+}
+.single-comment .author-image img {
+    width: 100%;
+}
+.single-comment .comment-text {}
+.single-comment .author-info h4 {
+    display: block;
+    float: left;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+.single-comment .author-info h4 a {}
+.single-comment .author-info h4 a:hover {
+    color: #fdc800;
+}
+.single-comment .time, .single-comment .reply {
+    float: right;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+.single-comment .reply a {
+    color: #fdc800;
+    display: block;
+}
+.single-comment .reply a:hover {
+    color: #002147;
+}
+.single-comment .time {
+    padding-right: 3px;
+    position: relative;
+}
+.single-comment .comment-text p {
+    line-height: 20px;
+}
+
+/*-- 14.2 Sidebar --*/
+.single-sidebar {
+    float: left;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.single-sidebar:last-child {
+    margin-bottom: 0;
+}
+.single-sidebar > h4 {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 16px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+/*-- Teacher Sidebar --*/
+.sidebar-teacher {
+    border: 1px solid #eee;
+    padding: 30px;
+    text-align: center;
+}
+.sidebar-teacher img {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 200px;
+    border: 5px solid #eee;
+    border-radius: 50%;
+}
+.sidebar-teacher h4 {
+    font-size: 20px;
+    line-height: 14px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.sidebar-teacher h5 {
+    color: #444;
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.sidebar-teacher .social{}
+.sidebar-teacher .social a {
+    display: inline-block;
+    margin: 0 3px;
+    vertical-align: text-top;
+}
+.sidebar-teacher .social a i {
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    min-width: 16px;
+    padding-top: 3px;
+}
+.sidebar-teacher .social a:hover {
+    color: #fdc800;
+}
+
+/*-- Category Sidebar --*/
+.category {}
+.category li {
+    border-bottom: 1px solid #eee;
+    display: block;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.category li:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+.category li a {
+    color: #4c4c4c;
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+}
+.category a:hover {
+    color: #fdc800;
+}
+
+/*-- Tags Sidebar --*/
+.tags {}
+.tags a {
+    border: 1px solid #ddd;
+    color: #4c4c4c;
+    float: left;
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 6px;
+    margin-right: 6px;
+    padding: 1px 9px;
+}
+.tags a:hover {
+    border: 1px solid #fdc800;
+    background-color: #fdc800;
+    color: #fff;
+}
+
+/*-- Related Courses Sidebar --*/
+.sidebar-course {
+    max-width: 320px;
+    width: 100%;
+}
+.sidebar-course .content {
+    padding: 20px;
+}
+.sidebar-course .content .title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 7px;
+}
+
+/*-- Recent Event Sidebar --*/
+.recent-event {}
+/*-- Recent Event Sidebar --*/
+.recent-event-item {
+    margin-bottom: 20px;
+}
+.recent-event-item:last-child {
+    margin-bottom: 0;
+}
+.recent-event-item .image {
+    border: 1px solid #eee;
+    display: block;
+    float: left;
+    width: 70px;
+    margin-right: 15px;
+}
+.recent-event-item .image img {
+    width: 100%;
+}
+.recent-event-item .content {
+    overflow: hidden;
+}
+.recent-event-item .content h5 {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 4px;
+}
+.recent-event-item .content h5 a {
+    color: #6b6b6b;
+}
+.recent-event-item .content h5 a:hover {
+    color: #fdc800;
+}
+.recent-event-item .meta {
+    margin-bottom: 4px;
+}
+.recent-event-item .meta a {
+    color: #b2b2b2;
+    font-size: 11px;
+    line-height: 12px;
+    margin-right: 13px;
+    display: block;
+    float: left;
+}
+.recent-event-item .meta a i {
+    font-size: 12px;
+    margin-right: 5px;
+}
+.recent-event-item .meta a:hover {
+    color: #fdc800;
+}
+.recent-event-item .content p {
+    color: #6b6b6b;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 0;
+}
+
+/*-- Recent News Sidebar --*/
+.recent-news {}
+/*-- Recent Event Sidebar --*/
+.recent-news-item {
+    margin-bottom: 20px;
+}
+.recent-news-item:last-child {
+    margin-bottom: 0;
+}
+.recent-news-item .image {
+    border: 1px solid #eee;
+    display: block;
+    float: left;
+    width: 70px;
+    margin-right: 15px;
+}
+.recent-news-item .image img {
+    width: 100%;
+}
+.recent-news-item .content {
+    overflow: hidden;
+}
+.recent-news-item .content h5 {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 4px;
+}
+.recent-news-item .content h5 a {
+    color: #6b6b6b;
+}
+.recent-news-item .content h5 a:hover {
+    color: #fdc800;
+}
+.recent-news-item .meta {
+    margin-bottom: 4px;
+}
+.recent-news-item .meta a {
+    color: #b2b2b2;
+    font-size: 11px;
+    line-height: 12px;
+    margin-right: 13px;
+    display: block;
+    float: left;
+}
+.recent-news-item .meta a i {
+    font-size: 12px;
+    margin-right: 5px;
+}
+.recent-news-item .meta a:hover {
+    color: #fdc800;
+}
+.recent-news-item .content p {
+    color: #6b6b6b;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 0;
+}
+}

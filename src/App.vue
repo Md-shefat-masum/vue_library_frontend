@@ -7,6 +7,7 @@
     <div v-else>
       <router-view />
     </div>
+
   </div>
 </template>
 
@@ -50,7 +51,8 @@ export default {
           this.$router.replace({ name: "login" });
         }
       } else {
-        this.$router.replace({ name: "login" });
+        // this.$router.replace({ name: "login" });
+        this.$router.replace({ name: "homePage" });
       }
     },
     check_auth_status: function () {
@@ -58,6 +60,7 @@ export default {
       this.chech_auth_role();
 
       if (this.get_check_auth_status == true) {
+        console.log('set token');
         window.axios.defaults.headers.common[
           "Authorization"
         ] = `Bearer ${this.get_auth_token}`;

@@ -5,9 +5,13 @@
         <div class="card">
           <div class="card-header">
             <div class="d-flex justify-content-between flex-wrap">
-
               <h4>Book List</h4>
-              <input type="text" class="form-control w-50" @keyup="search($event.target.value)" placeholder="search..">
+              <input
+                type="text"
+                class="form-control w-50"
+                @keyup="search($event.target.value)"
+                placeholder="search.."
+              />
               <button
                 v-if="selected_data.length > 0"
                 @click.prevent="delete_multiple()"
@@ -129,7 +133,7 @@ export default {
       pagination_option: {
         edgeNavigation: true,
       },
-      search_key: '',
+      search_key: "",
 
       selected_data: [],
     };
@@ -140,7 +144,7 @@ export default {
   methods: {
     getData: function (page = 1) {
       let url = `/book-list?page= ${page}`;
-      if(this.search_key.length > 0){
+      if (this.search_key.length > 0) {
         url += `&key=${this.search_key}`;
       }
       window.axios.get(url).then((res) => {
@@ -192,7 +196,7 @@ export default {
           });
       }
     },
-    search: function (key){
+    search: function (key) {
       console.log(key);
       this.search_key = key;
       this.getData();

@@ -24,7 +24,7 @@
         />
       </div>
 
-      <div class="form-group">
+      <div class="form-group d-none">
         <button
           type="button"
           class="btn btn-success m-1"

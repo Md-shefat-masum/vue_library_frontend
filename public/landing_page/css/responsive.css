@@ -1,0 +1,222 @@
+/* Normal desktop :992px. */
+.frontend_page {
+  /* Tablet desktop :768px. */
+  /* Large mobile :320px. */
+  /* Small Mobile :480px. */
+}
+@media (min-width: 992px) and (max-width: 1169px) {
+  .frontend_page .nivoSlider:hover a.nivo-prevNav {
+    left: 0;
+  }
+  .frontend_page .nivoSlider:hover a.nivo-nextNav {
+    right: 0;
+  }
+  .frontend_page .about-content {
+    margin-top: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .frontend_page .main-menu nav > ul > li {
+    margin-left: 20px;
+  }
+  .frontend_page .header-buttons {
+    margin-left: 20px;
+  }
+  .frontend_page .nivoSlider:hover a.nivo-prevNav {
+    left: 0;
+  }
+  .frontend_page .nivoSlider:hover a.nivo-nextNav {
+    right: 0;
+  }
+  .frontend_page .hero-content h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  .frontend_page .hero-content h1 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+  .frontend_page .hero-content p {
+    margin-bottom: 20px;
+  }
+  .frontend_page .hero-content .btn {
+    height: 40px;
+    padding: 7px 25px;
+  }
+  .frontend_page .about-content {
+    margin-top: 0;
+  }
+  .frontend_page .single-funfact h2 {
+    font-size: 50px;
+    line-height: 37px;
+    margin-bottom: 20px;
+  }
+  .frontend_page .single-funfact > h4 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .frontend_page .footer-top-area [class*="col-"]:nth-child(2n+1) {
+    clear: both;
+  }
+  .frontend_page #contactMap {
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .frontend_page .container {
+    width: 450px;
+  }
+  .frontend_page .header-top-left {
+    float: left;
+  }
+  .frontend_page .header-top-right {
+    float: right;
+  }
+  .frontend_page .header-buttons {
+    margin-left: 0;
+    margin-right: 50px;
+  }
+  .frontend_page .search-toggle,
+  .frontend_page .stick .search-toggle {
+    padding: 20px 0;
+  }
+  .frontend_page .header-logo,
+  .frontend_page .stick .header-logo {
+    margin: 18px 0;
+    width: 130px;
+  }
+  .frontend_page .slider-area,
+  .frontend_page .page-banner-area {
+    margin-top: 114px;
+  }
+  .frontend_page .nivo-directionNav {
+    display: none;
+  }
+  .frontend_page .hero-content h2 {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 5px;
+  }
+  .frontend_page .hero-content h1 {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+  .frontend_page .hero-content .btn {
+    height: 36px;
+    padding: 5px 20px;
+  }
+  .frontend_page .about-content {
+    margin-top: 0;
+  }
+  .frontend_page .footer-bottom-area p {
+    text-align: center;
+  }
+  .frontend_page .course-duration .text span {
+    width: 50% !important;
+  }
+  .frontend_page .comment-list li ul li {
+    padding-left: 0;
+  }
+  .frontend_page .page-banner-area {
+    padding: 60px 0;
+  }
+  .frontend_page .page-banner h1 {
+    font-size: 22px;
+    line-height: 17px;
+  }
+  .frontend_page .share-links {
+    float: none;
+  }
+  .frontend_page #contactMap {
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .frontend_page .container {
+    width: 300px;
+  }
+  .frontend_page .header-top-left,
+  .frontend_page .header-top-right {
+    text-align: center;
+    width: 100%;
+  }
+  .frontend_page .slider-area,
+  .frontend_page .page-banner-area {
+    margin-top: 138px;
+  }
+  .frontend_page .hero-content h2 {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .frontend_page .hero-content h1 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .frontend_page .hero-content .btn {
+    font-size: 11px;
+    height: 30px;
+    padding: 2px 15px;
+  }
+  .frontend_page .about-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .frontend_page .btn {
+    height: 36px;
+    padding: 5px 20px;
+  }
+  .frontend_page .section-title h3 {
+    font-size: 20px;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
+  .frontend_page .course-item .content .title {
+    font-size: 17px;
+  }
+  .frontend_page .single-funfact h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+  .frontend_page .single-funfact h4 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .frontend_page .event-item .date {
+    left: 15px;
+  }
+  .frontend_page .event-item .content {
+    padding: 15px;
+  }
+  .frontend_page .blog-item .content {
+    padding: 21px 25px 17px;
+  }
+  .frontend_page .blog-item .content h3 {
+    font-size: 18px;
+  }
+  .frontend_page .page-banner-area {
+    padding: 40px 0;
+  }
+  .frontend_page .page-banner h1 {
+    font-size: 18px;
+    line-height: 14px;
+  }
+  .frontend_page .course-duration .text span {
+    font-size: 14px;
+  }
+  .frontend_page .single-comment .author-image {
+    float: none;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .frontend_page .single-comment .author-info h4,
+  .frontend_page .single-comment .time,
+  .frontend_page .single-comment .reply {
+    float: none;
+  }
+  .frontend_page #contactMap {
+    height: 200px;
+  }
+}

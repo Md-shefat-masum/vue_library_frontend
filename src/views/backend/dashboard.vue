@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="backend">
         <!-- Loader starts -->
         <!-- <div class="loader-wrapper">
             <div class="loader bg-white">

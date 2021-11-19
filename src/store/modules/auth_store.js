@@ -16,7 +16,8 @@ const state = {
   },
   auth_role_name: "guest",
   auth_token: "",
-  server_url: "http://127.0.0.1:8000",
+  // server_url: "http://127.0.0.1:8000",
+  server_url: "https://libraryapi.sobujdiganta.com",
 };
 
 // getters

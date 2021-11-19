@@ -4,6 +4,7 @@ import dashboard from "../views/backend/dashboard";
 import student from "../views/backend/student";
 import studentLayout from "../views/backend/student/studentLayout";
 import studentBookList from "../views/backend/student/bookList";
+import studentEntryDetails from "../views/backend/student/entryDetails";
 import studentProfile from "../views/backend/student/studentProfile";
 
 import admin from "../views/backend/admin";
@@ -26,7 +27,11 @@ import authLayout from "../views/frontend/authLayout";
 import login from "../views/frontend/login";
 import signup from "../views/frontend/signup";
 import forget from "../views/frontend/forget";
+
 import portfolio from "../views/frontend/portfolio";
+import about from "../views/frontend/about";
+import homePage from "../views/frontend/homePage";
+import homepageLayout from "../views/frontend/homepageLayout";
 
 const routes = [
   {
@@ -101,6 +106,11 @@ const routes = [
         name: "studentBookList",
         component: studentBookList,
       },
+      {
+        path: "entry-details/:id",
+        name: "studentEntryDetails",
+        component: studentEntryDetails,
+      },
     ],
   },
 
@@ -158,10 +168,31 @@ const routes = [
     ],
   },
   {
-    path: "/vue_library_frontend/portfolio",
-    name: "portfolio",
-    component: portfolio,
+    path: "/vue_library_frontend",
+    component: homepageLayout,
+    children: [
+      {
+        path: "",
+        name: "homePage",
+        component: homePage,
+      },
+      {
+        path: "portfolio",
+        name: "portfolio",
+        component: portfolio,
+      },
+      {
+        path: "about",
+        name: "about",
+        component: about,
+      },
+    ],
   },
+  // {
+  //   path: "/vue_library_frontend/portfolio",
+  //   name: "portfolio",
+  //   component: portfolio,
+  // },
 ];
 
 const router = createRouter({

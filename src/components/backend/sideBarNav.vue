@@ -15,7 +15,7 @@
           alt="#"
         />
       </div>
-      <h6 class="mt-3 f-12">Johan Deo</h6>
+      <h6 class="mt-3 f-12">{{ get_auth_info.username }}</h6>
     </div>
     <ul class="sidebar-menu">
       <li v-if="get_auth_role_name == 'admin'">
